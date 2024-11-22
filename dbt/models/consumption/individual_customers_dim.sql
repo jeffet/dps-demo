@@ -1,0 +1,1 @@
+select customer_id, full_name, country_of_birth, birth_date, gender, social_security_number, state, city, address, zip from  {{ source('bank_v1','individual_customers') }}

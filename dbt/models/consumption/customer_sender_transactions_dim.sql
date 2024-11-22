@@ -1,0 +1,1 @@
+select customer_id, full_name, transactions_count, transactions_amount from  {{ source('bank_v1','customer_sender_transactions') }}

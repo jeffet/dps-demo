@@ -1,0 +1,1 @@
+select customer_id, account_id from  {{ source('bank_v1','customer_accounts') }}

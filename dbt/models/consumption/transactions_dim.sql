@@ -1,0 +1,1 @@
+select transaction_id, sender_account_id, receiver_account_id, transaction_type, net_cash_flow_amount, transaction_time from  {{ source('bank_v1','transactions') }}

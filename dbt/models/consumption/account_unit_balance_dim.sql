@@ -1,0 +1,1 @@
+select account_unit_id, net_amount, population_time from  {{ source('bank_v1','account_unit_balance') }}

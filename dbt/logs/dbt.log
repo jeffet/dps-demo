@@ -1,0 +1,806 @@
+[0m18:59:56.317011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f507189d460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f506f610040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f506f610850>]}
+
+
+============================== 18:59:56.322281 | 568d0fc2-51f8-48f9-963b-c1aa2b21d827 ==============================
+[0m18:59:56.322281 [info ] [MainThread]: Running with dbt=1.7.3
+[0m18:59:56.327946 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/airflow/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/app/dbts/nationwide_fraud_detection_1202/draft/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:59:56.625873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '568d0fc2-51f8-48f9-963b-c1aa2b21d827', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f506f564100>]}
+[0m18:59:56.633282 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-20gmi60e'
+[0m18:59:56.638816 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m18:59:56.661501 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m18:59:56.667236 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m18:59:56.694895 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m18:59:56.702018 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m18:59:56.720952 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m18:59:56.752447 [info ] [MainThread]: Updating lock file in file path: /app/dbts/nationwide_fraud_detection_1202/draft/dbt/package-lock.yml
+[0m18:59:56.769659 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-qpg6dr1b'
+[0m18:59:56.785747 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m18:59:58.235607 [info ] [MainThread]: Installed from version 0.12.1
+[0m18:59:58.237362 [info ] [MainThread]: Up to date!
+[0m18:59:58.242203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '568d0fc2-51f8-48f9-963b-c1aa2b21d827', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f506f5322b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f506f4e8b50>]}
+[0m18:59:58.246997 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m19:00:02.565004 [info ] [MainThread]: Installed from version 1.3.0
+[0m19:00:02.570495 [info ] [MainThread]: Up to date!
+[0m19:00:02.576280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '568d0fc2-51f8-48f9-963b-c1aa2b21d827', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f506f5dd970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f506f5ddf70>]}
+[0m19:00:02.583011 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 6.2893286, "process_user_time": 3.606607, "process_kernel_time": 0.237223, "process_mem_max_rss": "105160", "process_in_blocks": "16", "process_out_blocks": "3160"}
+[0m19:00:02.588312 [debug] [MainThread]: Command `dbt deps` succeeded at 19:00:02.587936 after 6.29 seconds
+[0m19:00:02.594922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f507189d460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f506f52f070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f506f59af10>]}
+[0m19:00:02.602865 [debug] [MainThread]: Flushing usage events
+[0m19:00:06.518687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5017ca9220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50196aeac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50159ddd00>]}
+
+
+============================== 19:00:06.524178 | b7c42ea7-fc57-40d6-85c8-98a83d1711a4 ==============================
+[0m19:00:06.524178 [info ] [MainThread]: Running with dbt=1.7.3
+[0m19:00:06.530604 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': './config', 'log_path': '/app/dbts/nationwide_fraud_detection_1202/draft/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run-operation generate_source --profiles-dir ./config --args {"schema_name": "BANK_V1", "generate_columns": "true", "table_names":["transactions","customer_sender_transactions","account_unit_balance","customer_accounts","customer_receiver_transactions","individual_customers"], "include_schema":True}', 'send_anonymous_usage_stats': 'True'}
+[0m19:00:07.803847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b7c42ea7-fc57-40d6-85c8-98a83d1711a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5015a2b8e0>]}
+[0m19:00:08.050197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b7c42ea7-fc57-40d6-85c8-98a83d1711a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff3178b20>]}
+[0m19:00:08.052539 [info ] [MainThread]: Registered adapter: snowflake=1.7.1
+[0m19:00:08.106879 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m19:00:08.118123 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:00:08.122971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b7c42ea7-fc57-40d6-85c8-98a83d1711a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff2ecc760>]}
+[0m19:00:10.161469 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m19:00:10.174195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b7c42ea7-fc57-40d6-85c8-98a83d1711a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff2ca9dc0>]}
+[0m19:00:10.270333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b7c42ea7-fc57-40d6-85c8-98a83d1711a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff2f18c10>]}
+[0m19:00:10.275565 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 571 macros, 0 groups, 0 semantic models
+[0m19:00:10.280957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b7c42ea7-fc57-40d6-85c8-98a83d1711a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff2ecc670>]}
+[0m19:00:10.289813 [debug] [MainThread]: Acquiring new snowflake connection 'macro_generate_source'
+[0m19:00:10.339605 [debug] [MainThread]: Using snowflake connection "macro_generate_source"
+[0m19:00:10.345117 [debug] [MainThread]: On macro_generate_source: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "connection_name": "macro_generate_source"} */
+describe table DATA_MESH_AI_AGENT_DEMO.BANK_V1.transactions
+[0m19:00:10.350504 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:00:11.053761 [debug] [MainThread]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m19:00:11.074510 [debug] [MainThread]: Using snowflake connection "macro_generate_source"
+[0m19:00:11.079562 [debug] [MainThread]: On macro_generate_source: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "connection_name": "macro_generate_source"} */
+describe table DATA_MESH_AI_AGENT_DEMO.BANK_V1.customer_sender_transactions
+[0m19:00:11.200558 [debug] [MainThread]: SQL status: SUCCESS 4 in 0.0 seconds
+[0m19:00:11.218264 [debug] [MainThread]: Using snowflake connection "macro_generate_source"
+[0m19:00:11.223808 [debug] [MainThread]: On macro_generate_source: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "connection_name": "macro_generate_source"} */
+describe table DATA_MESH_AI_AGENT_DEMO.BANK_V1.account_unit_balance
+[0m19:00:11.354023 [debug] [MainThread]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m19:00:11.366803 [debug] [MainThread]: Using snowflake connection "macro_generate_source"
+[0m19:00:11.371727 [debug] [MainThread]: On macro_generate_source: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "connection_name": "macro_generate_source"} */
+describe table DATA_MESH_AI_AGENT_DEMO.BANK_V1.customer_accounts
+[0m19:00:11.492381 [debug] [MainThread]: SQL status: SUCCESS 2 in 0.0 seconds
+[0m19:00:11.505630 [debug] [MainThread]: Using snowflake connection "macro_generate_source"
+[0m19:00:11.511088 [debug] [MainThread]: On macro_generate_source: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "connection_name": "macro_generate_source"} */
+describe table DATA_MESH_AI_AGENT_DEMO.BANK_V1.customer_receiver_transactions
+[0m19:00:11.642909 [debug] [MainThread]: SQL status: SUCCESS 4 in 0.0 seconds
+[0m19:00:11.656318 [debug] [MainThread]: Using snowflake connection "macro_generate_source"
+[0m19:00:11.661474 [debug] [MainThread]: On macro_generate_source: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "connection_name": "macro_generate_source"} */
+describe table DATA_MESH_AI_AGENT_DEMO.BANK_V1.individual_customers
+[0m19:00:11.773382 [debug] [MainThread]: SQL status: SUCCESS 10 in 0.0 seconds
+[0m19:00:11.786391 [debug] [MainThread]: On macro_generate_source: Close
+[0m19:00:11.976971 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 5.6400423, "process_user_time": 7.040729, "process_kernel_time": 0.641599, "process_mem_max_rss": "204164", "process_in_blocks": "552", "process_out_blocks": "2688"}
+[0m19:00:11.983016 [debug] [MainThread]: Command `dbt run-operation` succeeded at 19:00:11.982480 after 5.65 seconds
+[0m19:00:11.988217 [debug] [MainThread]: Connection 'macro_generate_source' was properly closed.
+[0m19:00:11.993998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5017ca9220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5015a2b8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff2e03190>]}
+[0m19:00:11.999511 [debug] [MainThread]: Flushing usage events
+[0m19:00:16.186931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f013dbb79a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f013f547ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f013b8c61f0>]}
+
+
+============================== 19:00:16.192157 | f8996d46-eb1d-4679-af5d-f9f9eb405b85 ==============================
+[0m19:00:16.192157 [info ] [MainThread]: Running with dbt=1.7.3
+[0m19:00:16.197145 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/app/dbts/nationwide_fraud_detection_1202/draft/dbt/logs', 'debug': 'False', 'profiles_dir': './config', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt compile --profiles-dir ./config', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:00:17.412876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f8996d46-eb1d-4679-af5d-f9f9eb405b85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f011d066610>]}
+[0m19:00:17.639369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f8996d46-eb1d-4679-af5d-f9f9eb405b85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f011ce96910>]}
+[0m19:00:17.644896 [info ] [MainThread]: Registered adapter: snowflake=1.7.1
+[0m19:00:17.681779 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m19:00:17.911309 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m19:00:17.918215 [debug] [MainThread]: Partial parsing: added file: nationwide_fraud_detection_1202://models/consumption/source.yml
+[0m19:00:18.221385 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m19:00:18.240489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f8996d46-eb1d-4679-af5d-f9f9eb405b85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f011c94b0d0>]}
+[0m19:00:18.358272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f8996d46-eb1d-4679-af5d-f9f9eb405b85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f011cb68df0>]}
+[0m19:00:18.364145 [info ] [MainThread]: Found 6 sources, 0 exposures, 0 metrics, 571 macros, 0 groups, 0 semantic models
+[0m19:00:18.368807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f8996d46-eb1d-4679-af5d-f9f9eb405b85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f011cb68d30>]}
+[0m19:00:18.374976 [info ] [MainThread]: 
+[0m19:00:18.380931 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:00:18.386366 [debug] [MainThread]: Command end result
+[0m19:00:18.485926 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 2.4842412, "process_user_time": 5.307147, "process_kernel_time": 0.62875, "process_mem_max_rss": "203432", "process_out_blocks": "3712", "process_in_blocks": "0"}
+[0m19:00:18.491323 [debug] [MainThread]: Command `dbt compile` succeeded at 19:00:18.490883 after 2.49 seconds
+[0m19:00:18.497164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f013dbb79a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f011cdb8bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f011cb60cd0>]}
+[0m19:00:18.504412 [debug] [MainThread]: Flushing usage events
+[0m19:00:22.890198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7157c3b460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f71559c2c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f71559c2cd0>]}
+
+
+============================== 19:00:22.898413 | 3de29235-d104-4f4b-8e2c-b7f149c38745 ==============================
+[0m19:00:22.898413 [info ] [MainThread]: Running with dbt=1.7.3
+[0m19:00:22.904470 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './config', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/app/dbts/nationwide_fraud_detection_1202/draft/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir ./config', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:00:24.151124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3de29235-d104-4f4b-8e2c-b7f149c38745', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f71330d9040>]}
+[0m19:00:24.381186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3de29235-d104-4f4b-8e2c-b7f149c38745', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f713311c4c0>]}
+[0m19:00:24.387375 [info ] [MainThread]: Registered adapter: snowflake=1.7.1
+[0m19:00:24.424121 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m19:00:24.618011 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:00:24.623649 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:00:24.629676 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m19:00:24.650042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3de29235-d104-4f4b-8e2c-b7f149c38745', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132c210d0>]}
+[0m19:00:24.773715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3de29235-d104-4f4b-8e2c-b7f149c38745', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132d1dbe0>]}
+[0m19:00:24.779551 [info ] [MainThread]: Found 6 sources, 0 exposures, 0 metrics, 571 macros, 0 groups, 0 semantic models
+[0m19:00:24.786875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3de29235-d104-4f4b-8e2c-b7f149c38745', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132d1db80>]}
+[0m19:00:24.795072 [info ] [MainThread]: 
+[0m19:00:24.801511 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:00:24.808431 [debug] [MainThread]: Command end result
+[0m19:00:24.898601 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.211047, "process_user_time": 5.298655, "process_kernel_time": 0.577644, "process_mem_max_rss": "202604", "process_in_blocks": "1200", "process_out_blocks": "2528"}
+[0m19:00:24.903906 [debug] [MainThread]: Command `dbt run` succeeded at 19:00:24.903501 after 2.22 seconds
+[0m19:00:24.909158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7157c3b460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132f44250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f71330d9040>]}
+[0m19:00:24.914069 [debug] [MainThread]: Flushing usage events
+[0m19:00:29.014665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7757d33130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7755abb8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7755abba00>]}
+
+
+============================== 19:00:29.021729 | 73d13ec7-5d98-4292-a6e9-e4cd24d79dc8 ==============================
+[0m19:00:29.021729 [info ] [MainThread]: Running with dbt=1.7.3
+[0m19:00:29.028009 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './config', 'debug': 'False', 'version_check': 'True', 'log_path': '/app/dbts/nationwide_fraud_detection_1202/draft/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile --profiles-dir ./config', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:00:30.335018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '73d13ec7-5d98-4292-a6e9-e4cd24d79dc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7759744490>]}
+[0m19:00:30.685591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '73d13ec7-5d98-4292-a6e9-e4cd24d79dc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7733157040>]}
+[0m19:00:30.692794 [info ] [MainThread]: Registered adapter: snowflake=1.7.1
+[0m19:00:30.729265 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m19:00:30.942996 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 7 files added, 0 files changed.
+[0m19:00:30.948543 [debug] [MainThread]: Partial parsing: added file: nationwide_fraud_detection_1202://models/consumption/transactions_dim.sql
+[0m19:00:30.955056 [debug] [MainThread]: Partial parsing: added file: nationwide_fraud_detection_1202://models/consumption/customer_accounts_dim.sql
+[0m19:00:30.960684 [debug] [MainThread]: Partial parsing: added file: nationwide_fraud_detection_1202://models/consumption/fraud_detection_fact.sql
+[0m19:00:30.966963 [debug] [MainThread]: Partial parsing: added file: nationwide_fraud_detection_1202://models/consumption/customer_receiver_transactions_dim.sql
+[0m19:00:30.973899 [debug] [MainThread]: Partial parsing: added file: nationwide_fraud_detection_1202://models/consumption/account_unit_balance_dim.sql
+[0m19:00:30.980295 [debug] [MainThread]: Partial parsing: added file: nationwide_fraud_detection_1202://models/consumption/customer_sender_transactions_dim.sql
+[0m19:00:30.985823 [debug] [MainThread]: Partial parsing: added file: nationwide_fraud_detection_1202://models/consumption/individual_customers_dim.sql
+[0m19:00:31.369900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '73d13ec7-5d98-4292-a6e9-e4cd24d79dc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7731d4a0d0>]}
+[0m19:00:31.492905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '73d13ec7-5d98-4292-a6e9-e4cd24d79dc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7732e1afd0>]}
+[0m19:00:31.498265 [info ] [MainThread]: Found 7 models, 6 sources, 0 exposures, 0 metrics, 571 macros, 0 groups, 0 semantic models
+[0m19:00:31.504265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '73d13ec7-5d98-4292-a6e9-e4cd24d79dc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7732e1ad30>]}
+[0m19:00:31.512287 [info ] [MainThread]: 
+[0m19:00:31.518432 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:00:31.524964 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202'
+[0m19:00:31.552124 [debug] [ThreadPool]: Using snowflake connection "list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202"
+[0m19:00:31.557769 [debug] [ThreadPool]: On list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202"} */
+show terse objects in DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202 limit 10000
+[0m19:00:31.562566 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:00:32.548219 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b880d4-0606-c716-001c-f20305844b1e
+[0m19:00:32.555353 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m19:00:32.560218 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m19:00:32.565695 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:00:32.571513 [debug] [ThreadPool]: On list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202: Close
+[0m19:00:32.765792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '73d13ec7-5d98-4292-a6e9-e4cd24d79dc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77331895e0>]}
+[0m19:00:32.772844 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:00:32.779218 [info ] [MainThread]: 
+[0m19:00:32.801944 [debug] [Thread-1  ]: Began running node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:00:32.803140 [debug] [Thread-2  ]: Began running node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:00:32.804571 [debug] [Thread-3  ]: Began running node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:00:32.805706 [debug] [Thread-4  ]: Began running node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:00:32.808327 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202, now model.nationwide_fraud_detection_1202.account_unit_balance_dim)
+[0m19:00:32.815192 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.nationwide_fraud_detection_1202.customer_accounts_dim'
+[0m19:00:32.820906 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim'
+[0m19:00:32.826859 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.nationwide_fraud_detection_1202.customer_sender_transactions_dim'
+[0m19:00:32.832827 [debug] [Thread-1  ]: Began compiling node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:00:32.839135 [debug] [Thread-2  ]: Began compiling node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:00:32.844784 [debug] [Thread-3  ]: Began compiling node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:00:32.850747 [debug] [Thread-4  ]: Began compiling node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:00:32.870295 [debug] [Thread-1  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.account_unit_balance_dim"
+[0m19:00:32.879290 [debug] [Thread-2  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.customer_accounts_dim"
+[0m19:00:32.889792 [debug] [Thread-3  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim"
+[0m19:00:32.899597 [debug] [Thread-4  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.customer_sender_transactions_dim"
+[0m19:00:32.931594 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.account_unit_balance_dim (compile): 19:00:32.856725 => 19:00:32.930694
+[0m19:00:32.936641 [debug] [Thread-4  ]: Timing info for model.nationwide_fraud_detection_1202.customer_sender_transactions_dim (compile): 19:00:32.891272 => 19:00:32.936109
+[0m19:00:32.938004 [debug] [Thread-1  ]: Began executing node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:00:32.939525 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.customer_accounts_dim (compile): 19:00:32.871244 => 19:00:32.939030
+[0m19:00:32.943902 [debug] [Thread-4  ]: Began executing node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:00:32.948914 [debug] [Thread-3  ]: Timing info for model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim (compile): 19:00:32.880644 => 19:00:32.948363
+[0m19:00:32.950232 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.account_unit_balance_dim (execute): 19:00:32.949702 => 19:00:32.949734
+[0m19:00:32.955775 [debug] [Thread-2  ]: Began executing node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:00:32.961330 [debug] [Thread-4  ]: Timing info for model.nationwide_fraud_detection_1202.customer_sender_transactions_dim (execute): 19:00:32.960805 => 19:00:32.960824
+[0m19:00:32.967916 [debug] [Thread-3  ]: Began executing node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:00:32.974448 [debug] [Thread-1  ]: Finished running node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:00:32.980141 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.customer_accounts_dim (execute): 19:00:32.979571 => 19:00:32.979590
+[0m19:00:32.986847 [debug] [Thread-4  ]: Finished running node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:00:32.992733 [debug] [Thread-3  ]: Timing info for model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim (execute): 19:00:32.992178 => 19:00:32.992197
+[0m19:00:32.997666 [debug] [Thread-1  ]: Began running node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:00:33.003673 [debug] [Thread-2  ]: Finished running node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:00:33.008626 [debug] [Thread-4  ]: Began running node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:00:33.019541 [debug] [Thread-3  ]: Finished running node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:00:33.025636 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.nationwide_fraud_detection_1202.account_unit_balance_dim, now model.nationwide_fraud_detection_1202.individual_customers_dim)
+[0m19:00:33.037375 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly model.nationwide_fraud_detection_1202.customer_sender_transactions_dim, now model.nationwide_fraud_detection_1202.transactions_dim)
+[0m19:00:33.047827 [debug] [Thread-1  ]: Began compiling node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:00:33.054325 [debug] [Thread-4  ]: Began compiling node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:00:33.072165 [debug] [Thread-1  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.individual_customers_dim"
+[0m19:00:33.078481 [debug] [Thread-4  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.transactions_dim"
+[0m19:00:33.092601 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.individual_customers_dim (compile): 19:00:33.060124 => 19:00:33.092018
+[0m19:00:33.097696 [debug] [Thread-1  ]: Began executing node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:00:33.098829 [debug] [Thread-4  ]: Timing info for model.nationwide_fraud_detection_1202.transactions_dim (compile): 19:00:33.073556 => 19:00:33.098360
+[0m19:00:33.103186 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.individual_customers_dim (execute): 19:00:33.102642 => 19:00:33.102663
+[0m19:00:33.107740 [debug] [Thread-4  ]: Began executing node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:00:33.113828 [debug] [Thread-1  ]: Finished running node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:00:33.118854 [debug] [Thread-4  ]: Timing info for model.nationwide_fraud_detection_1202.transactions_dim (execute): 19:00:33.118310 => 19:00:33.118325
+[0m19:00:33.129606 [debug] [Thread-4  ]: Finished running node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:00:33.135228 [debug] [Thread-2  ]: Began running node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:00:33.142037 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly model.nationwide_fraud_detection_1202.customer_accounts_dim, now model.nationwide_fraud_detection_1202.fraud_detection_fact)
+[0m19:00:33.147561 [debug] [Thread-2  ]: Began compiling node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:00:33.162456 [debug] [Thread-2  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.fraud_detection_fact"
+[0m19:00:33.177510 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.fraud_detection_fact (compile): 19:00:33.156293 => 19:00:33.176809
+[0m19:00:33.183413 [debug] [Thread-2  ]: Began executing node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:00:33.188589 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.fraud_detection_fact (execute): 19:00:33.187965 => 19:00:33.187991
+[0m19:00:33.195161 [debug] [Thread-2  ]: Finished running node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:00:33.207118 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:00:33.212578 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.individual_customers_dim' was properly closed.
+[0m19:00:33.217602 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.fraud_detection_fact' was properly closed.
+[0m19:00:33.222428 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim' was properly closed.
+[0m19:00:33.227909 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.transactions_dim' was properly closed.
+[0m19:00:33.234564 [debug] [MainThread]: Command end result
+[0m19:00:33.333201 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 4.4868426, "process_user_time": 5.927418, "process_kernel_time": 0.669717, "process_mem_max_rss": "213244", "process_in_blocks": "208", "process_out_blocks": "4568"}
+[0m19:00:33.338518 [debug] [MainThread]: Command `dbt compile` succeeded at 19:00:33.338122 after 4.49 seconds
+[0m19:00:33.344401 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7757d33130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7733079280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77331895e0>]}
+[0m19:00:33.350510 [debug] [MainThread]: Flushing usage events
+[0m19:01:12.868071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6f1683d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6cba8730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6cba8760>]}
+
+
+============================== 19:01:12.876378 | 4807fc00-084a-41ed-a526-a7c99f09e1ac ==============================
+[0m19:01:12.876378 [info ] [MainThread]: Running with dbt=1.7.3
+[0m19:01:12.882667 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/config', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt deps --profiles-dir /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/config --project-dir /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:01:13.016773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4807fc00-084a-41ed-a526-a7c99f09e1ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6cb41dc0>]}
+[0m19:01:15.037273 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-27f2tvj5'
+[0m19:01:15.043358 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m19:01:15.078043 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m19:01:15.086536 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m19:01:15.114116 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m19:01:15.123258 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m19:01:15.155507 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m19:01:15.169052 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m19:01:16.952677 [info ] [MainThread]: Installed from version 0.12.1
+[0m19:01:16.958061 [info ] [MainThread]: Up to date!
+[0m19:01:16.963680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '4807fc00-084a-41ed-a526-a7c99f09e1ac', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6ca87970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6caa2d00>]}
+[0m19:01:16.969438 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m19:01:22.410404 [info ] [MainThread]: Installed from version 1.3.0
+[0m19:01:22.413331 [info ] [MainThread]: Up to date!
+[0m19:01:22.419404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '4807fc00-084a-41ed-a526-a7c99f09e1ac', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6ca87970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6caa2be0>]}
+[0m19:01:22.425629 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 9.659636, "process_user_time": 3.792435, "process_kernel_time": 0.242749, "process_mem_max_rss": "254624", "process_in_blocks": "40", "process_out_blocks": "3136"}
+[0m19:01:22.431295 [debug] [MainThread]: Command `dbt deps` succeeded at 19:01:22.431109 after 9.67 seconds
+[0m19:01:22.437207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6f1683d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6cada580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c6cb4da00>]}
+[0m19:01:22.442313 [debug] [MainThread]: Flushing usage events
+[0m19:01:58.116158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3862b4490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd383ce0e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd383ce0940>]}
+
+
+============================== 19:01:58.124169 | a3026c55-376b-43b1-8f35-75555507ea7e ==============================
+[0m19:01:58.124169 [info ] [MainThread]: Running with dbt=1.7.3
+[0m19:01:58.131192 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/logs', 'profiles_dir': '/opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/config', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt seed --profiles-dir /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/config --project-dir /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:01:59.131055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a3026c55-376b-43b1-8f35-75555507ea7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd36601aeb0>]}
+[0m19:01:59.257348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a3026c55-376b-43b1-8f35-75555507ea7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd383c9b0a0>]}
+[0m19:01:59.263280 [info ] [MainThread]: Registered adapter: snowflake=1.7.1
+[0m19:01:59.329726 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m19:01:59.373383 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m19:01:59.378672 [info ] [MainThread]: Unable to do partial parsing because env vars used in profiles.yml have changed
+[0m19:01:59.384106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a3026c55-376b-43b1-8f35-75555507ea7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd365ecac10>]}
+[0m19:02:01.913943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a3026c55-376b-43b1-8f35-75555507ea7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd364b2f0d0>]}
+[0m19:02:02.038783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a3026c55-376b-43b1-8f35-75555507ea7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd365eca490>]}
+[0m19:02:02.045128 [info ] [MainThread]: Found 7 models, 6 sources, 0 exposures, 0 metrics, 571 macros, 0 groups, 0 semantic models
+[0m19:02:02.051172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a3026c55-376b-43b1-8f35-75555507ea7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd364acae50>]}
+[0m19:02:02.058582 [info ] [MainThread]: 
+[0m19:02:02.064630 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:02:02.070136 [debug] [MainThread]: Command end result
+[0m19:02:02.173510 [info ] [MainThread]: 
+[0m19:02:02.178740 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:02:02.184618 [info ] [MainThread]: 
+[0m19:02:02.189843 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+[0m19:02:02.196528 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 4.1756263, "process_user_time": 6.660724, "process_kernel_time": 0.634002, "process_mem_max_rss": "254676", "process_in_blocks": "1880", "process_out_blocks": "3880"}
+[0m19:02:02.202334 [debug] [MainThread]: Command `dbt seed` succeeded at 19:02:02.202156 after 4.18 seconds
+[0m19:02:02.208737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3862b4490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd365ea4a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd36601aeb0>]}
+[0m19:02:02.215056 [debug] [MainThread]: Flushing usage events
+[0m19:02:38.061799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769aabe6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769b208400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76984e0a90>]}
+
+
+============================== 19:02:38.070694 | bedf7914-105c-4bc3-8237-52a9dd442f13 ==============================
+[0m19:02:38.070694 [info ] [MainThread]: Running with dbt=1.7.3
+[0m19:02:38.077454 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/config', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -s ./models --profiles-dir /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/config --project-dir /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:02:39.187351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769b208400>]}
+[0m19:02:39.320703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7676827f10>]}
+[0m19:02:39.327491 [info ] [MainThread]: Registered adapter: snowflake=1.7.1
+[0m19:02:39.378492 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m19:02:39.768919 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:02:39.775561 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:02:39.789299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7676416dc0>]}
+[0m19:02:39.903468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f767658dc40>]}
+[0m19:02:39.909436 [info ] [MainThread]: Found 7 models, 6 sources, 0 exposures, 0 metrics, 571 macros, 0 groups, 0 semantic models
+[0m19:02:39.915368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7676576070>]}
+[0m19:02:39.922749 [info ] [MainThread]: 
+[0m19:02:39.929035 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:02:39.936419 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DATA_MESH_AI_AGENT_DEMO'
+[0m19:02:39.959979 [debug] [ThreadPool]: Using snowflake connection "list_DATA_MESH_AI_AGENT_DEMO"
+[0m19:02:39.966224 [debug] [ThreadPool]: On list_DATA_MESH_AI_AGENT_DEMO: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "connection_name": "list_DATA_MESH_AI_AGENT_DEMO"} */
+show terse schemas in database DATA_MESH_AI_AGENT_DEMO
+    limit 10000
+[0m19:02:39.972521 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:02:41.402623 [debug] [ThreadPool]: SQL status: SUCCESS 301 in 1.0 seconds
+[0m19:02:41.428437 [debug] [ThreadPool]: On list_DATA_MESH_AI_AGENT_DEMO: Close
+[0m19:02:41.611910 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DATA_MESH_AI_AGENT_DEMO, now create_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202)
+[0m19:02:41.618810 [debug] [ThreadPool]: Creating schema "database: "DATA_MESH_AI_AGENT_DEMO"
+schema: "nationwide_fraud_detection_1202"
+"
+[0m19:02:41.632125 [debug] [ThreadPool]: Using snowflake connection "create_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202"
+[0m19:02:41.638138 [debug] [ThreadPool]: On create_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "connection_name": "create_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202"} */
+create schema if not exists DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202
+[0m19:02:41.643589 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:02:42.198343 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m19:02:42.205348 [debug] [ThreadPool]: On create_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202: Close
+[0m19:02:42.649253 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202, now list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202)
+[0m19:02:42.668593 [debug] [ThreadPool]: Using snowflake connection "list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202"
+[0m19:02:42.674318 [debug] [ThreadPool]: On list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "connection_name": "list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202"} */
+show terse objects in DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202 limit 10000
+[0m19:02:42.688479 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:02:43.365644 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m19:02:43.368504 [debug] [ThreadPool]: On list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202: Close
+[0m19:02:43.554759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76767cc5e0>]}
+[0m19:02:43.561897 [info ] [MainThread]: Concurrency: 4 threads (target='snowflake')
+[0m19:02:43.568136 [info ] [MainThread]: 
+[0m19:02:43.583504 [debug] [Thread-1  ]: Began running node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:02:43.584703 [debug] [Thread-3  ]: Began running node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:02:43.595870 [info ] [Thread-3  ]: 3 of 7 START sql table model nationwide_fraud_detection_1202.customer_receiver_transactions_dim  [RUN]
+[0m19:02:43.586032 [debug] [Thread-4  ]: Began running node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:02:43.589628 [info ] [Thread-1  ]: 1 of 7 START sql table model nationwide_fraud_detection_1202.account_unit_balance_dim  [RUN]
+[0m19:02:43.585449 [debug] [Thread-2  ]: Began running node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:02:43.602829 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim'
+[0m19:02:43.608698 [info ] [Thread-4  ]: 4 of 7 START sql table model nationwide_fraud_detection_1202.customer_sender_transactions_dim  [RUN]
+[0m19:02:43.614970 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202, now model.nationwide_fraud_detection_1202.account_unit_balance_dim)
+[0m19:02:43.620504 [info ] [Thread-2  ]: 2 of 7 START sql table model nationwide_fraud_detection_1202.customer_accounts_dim  [RUN]
+[0m19:02:43.626118 [debug] [Thread-3  ]: Began compiling node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:02:43.632312 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.nationwide_fraud_detection_1202.customer_sender_transactions_dim'
+[0m19:02:43.638640 [debug] [Thread-1  ]: Began compiling node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:02:43.644752 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.nationwide_fraud_detection_1202.customer_accounts_dim'
+[0m19:02:43.661720 [debug] [Thread-3  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim"
+[0m19:02:43.662317 [debug] [Thread-4  ]: Began compiling node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:02:43.671336 [debug] [Thread-1  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.account_unit_balance_dim"
+[0m19:02:43.677775 [debug] [Thread-2  ]: Began compiling node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:02:43.693235 [debug] [Thread-4  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.customer_sender_transactions_dim"
+[0m19:02:43.708243 [debug] [Thread-2  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.customer_accounts_dim"
+[0m19:02:43.709669 [debug] [Thread-3  ]: Timing info for model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim (compile): 19:02:43.650183 => 19:02:43.709317
+[0m19:02:43.719669 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.account_unit_balance_dim (compile): 19:02:43.667353 => 19:02:43.719338
+[0m19:02:43.724261 [debug] [Thread-3  ]: Began executing node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:02:43.728618 [debug] [Thread-4  ]: Timing info for model.nationwide_fraud_detection_1202.customer_sender_transactions_dim (compile): 19:02:43.689432 => 19:02:43.728301
+[0m19:02:43.729814 [debug] [Thread-1  ]: Began executing node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:02:43.740625 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.customer_accounts_dim (compile): 19:02:43.704545 => 19:02:43.740210
+[0m19:02:43.757050 [debug] [Thread-4  ]: Began executing node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:02:43.778274 [debug] [Thread-3  ]: Writing runtime sql for node "model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim"
+[0m19:02:43.782587 [debug] [Thread-1  ]: Writing runtime sql for node "model.nationwide_fraud_detection_1202.account_unit_balance_dim"
+[0m19:02:43.788044 [debug] [Thread-2  ]: Began executing node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:02:43.797023 [debug] [Thread-4  ]: Writing runtime sql for node "model.nationwide_fraud_detection_1202.customer_sender_transactions_dim"
+[0m19:02:43.817572 [debug] [Thread-2  ]: Writing runtime sql for node "model.nationwide_fraud_detection_1202.customer_accounts_dim"
+[0m19:02:43.839000 [debug] [Thread-3  ]: Using snowflake connection "model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim"
+[0m19:02:43.844778 [debug] [Thread-4  ]: Using snowflake connection "model.nationwide_fraud_detection_1202.customer_sender_transactions_dim"
+[0m19:02:43.845380 [debug] [Thread-3  ]: On model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "node_id": "model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim"} */
+create or replace transient table DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+         as
+        (select customer_id, full_name, transactions_count, transactions_amount from  DATA_MESH_AI_AGENT_DEMO.bank_v1.customer_receiver_transactions
+        );
+[0m19:02:43.848247 [debug] [Thread-2  ]: Using snowflake connection "model.nationwide_fraud_detection_1202.customer_accounts_dim"
+[0m19:02:43.851537 [debug] [Thread-4  ]: On model.nationwide_fraud_detection_1202.customer_sender_transactions_dim: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "node_id": "model.nationwide_fraud_detection_1202.customer_sender_transactions_dim"} */
+create or replace transient table DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+         as
+        (select customer_id, full_name, transactions_count, transactions_amount from  DATA_MESH_AI_AGENT_DEMO.bank_v1.customer_sender_transactions
+        );
+[0m19:02:43.853414 [debug] [Thread-1  ]: Using snowflake connection "model.nationwide_fraud_detection_1202.account_unit_balance_dim"
+[0m19:02:43.857092 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m19:02:43.863173 [debug] [Thread-2  ]: On model.nationwide_fraud_detection_1202.customer_accounts_dim: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "node_id": "model.nationwide_fraud_detection_1202.customer_accounts_dim"} */
+create or replace transient table DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202.customer_accounts_dim
+         as
+        (select customer_id, account_id from  DATA_MESH_AI_AGENT_DEMO.bank_v1.customer_accounts
+        );
+[0m19:02:43.869092 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m19:02:43.874496 [debug] [Thread-1  ]: On model.nationwide_fraud_detection_1202.account_unit_balance_dim: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "node_id": "model.nationwide_fraud_detection_1202.account_unit_balance_dim"} */
+create or replace transient table DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202.account_unit_balance_dim
+         as
+        (select account_unit_id, net_amount, population_time from  DATA_MESH_AI_AGENT_DEMO.bank_v1.account_unit_balance
+        );
+[0m19:02:43.886253 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m19:02:43.897867 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m19:02:45.516483 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m19:02:45.524097 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m19:02:45.556581 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.account_unit_balance_dim (execute): 19:02:43.778624 => 19:02:45.556257
+[0m19:02:45.557870 [debug] [Thread-3  ]: Timing info for model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim (execute): 19:02:43.735103 => 19:02:45.557577
+[0m19:02:45.562843 [debug] [Thread-1  ]: On model.nationwide_fraud_detection_1202.account_unit_balance_dim: Close
+[0m19:02:45.568402 [debug] [Thread-3  ]: On model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim: Close
+[0m19:02:45.607554 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m19:02:45.616068 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.customer_accounts_dim (execute): 19:02:43.813616 => 19:02:45.615798
+[0m19:02:45.622076 [debug] [Thread-2  ]: On model.nationwide_fraud_detection_1202.customer_accounts_dim: Close
+[0m19:02:45.719656 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m19:02:45.728478 [debug] [Thread-4  ]: Timing info for model.nationwide_fraud_detection_1202.customer_sender_transactions_dim (execute): 19:02:43.793306 => 19:02:45.728157
+[0m19:02:45.735195 [debug] [Thread-4  ]: On model.nationwide_fraud_detection_1202.customer_sender_transactions_dim: Close
+[0m19:02:45.751149 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76757a1880>]}
+[0m19:02:45.757787 [info ] [Thread-1  ]: 1 of 7 OK created sql table model nationwide_fraud_detection_1202.account_unit_balance_dim  [[32mSUCCESS 1[0m in 2.14s]
+[0m19:02:45.761198 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76758dbbe0>]}
+[0m19:02:45.764272 [debug] [Thread-1  ]: Finished running node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:02:45.769841 [info ] [Thread-3  ]: 3 of 7 OK created sql table model nationwide_fraud_detection_1202.customer_receiver_transactions_dim  [[32mSUCCESS 1[0m in 2.16s]
+[0m19:02:45.776135 [debug] [Thread-1  ]: Began running node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:02:45.782163 [debug] [Thread-3  ]: Finished running node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:02:45.788242 [info ] [Thread-1  ]: 5 of 7 START sql table model nationwide_fraud_detection_1202.individual_customers_dim  [RUN]
+[0m19:02:45.794074 [debug] [Thread-3  ]: Began running node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:02:45.800318 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.nationwide_fraud_detection_1202.account_unit_balance_dim, now model.nationwide_fraud_detection_1202.individual_customers_dim)
+[0m19:02:45.806313 [info ] [Thread-3  ]: 6 of 7 START sql table model nationwide_fraud_detection_1202.transactions_dim .. [RUN]
+[0m19:02:45.811612 [debug] [Thread-1  ]: Began compiling node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:02:45.816104 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76767cc5e0>]}
+[0m19:02:45.818240 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim, now model.nationwide_fraud_detection_1202.transactions_dim)
+[0m19:02:45.828738 [debug] [Thread-1  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.individual_customers_dim"
+[0m19:02:45.834594 [info ] [Thread-2  ]: 2 of 7 OK created sql table model nationwide_fraud_detection_1202.customer_accounts_dim  [[32mSUCCESS 1[0m in 2.17s]
+[0m19:02:45.840273 [debug] [Thread-3  ]: Began compiling node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:02:45.851566 [debug] [Thread-2  ]: Finished running node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:02:45.863204 [debug] [Thread-3  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.transactions_dim"
+[0m19:02:45.863880 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.individual_customers_dim (compile): 19:02:45.823997 => 19:02:45.863517
+[0m19:02:45.904464 [debug] [Thread-1  ]: Began executing node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:02:45.910566 [debug] [Thread-3  ]: Timing info for model.nationwide_fraud_detection_1202.transactions_dim (compile): 19:02:45.859078 => 19:02:45.910226
+[0m19:02:45.918750 [debug] [Thread-1  ]: Writing runtime sql for node "model.nationwide_fraud_detection_1202.individual_customers_dim"
+[0m19:02:45.921453 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7676447340>]}
+[0m19:02:45.929168 [debug] [Thread-3  ]: Began executing node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:02:45.950065 [info ] [Thread-4  ]: 4 of 7 OK created sql table model nationwide_fraud_detection_1202.customer_sender_transactions_dim  [[32mSUCCESS 1[0m in 2.29s]
+[0m19:02:45.953017 [debug] [Thread-1  ]: Using snowflake connection "model.nationwide_fraud_detection_1202.individual_customers_dim"
+[0m19:02:45.964604 [debug] [Thread-3  ]: Writing runtime sql for node "model.nationwide_fraud_detection_1202.transactions_dim"
+[0m19:02:45.975103 [debug] [Thread-4  ]: Finished running node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:02:45.985911 [debug] [Thread-1  ]: On model.nationwide_fraud_detection_1202.individual_customers_dim: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "node_id": "model.nationwide_fraud_detection_1202.individual_customers_dim"} */
+create or replace transient table DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202.individual_customers_dim
+         as
+        (select customer_id, full_name, country_of_birth, birth_date, gender, social_security_number, state, city, address, zip from  DATA_MESH_AI_AGENT_DEMO.bank_v1.individual_customers
+        );
+[0m19:02:46.010219 [debug] [Thread-3  ]: Using snowflake connection "model.nationwide_fraud_detection_1202.transactions_dim"
+[0m19:02:46.026262 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m19:02:46.037886 [debug] [Thread-3  ]: On model.nationwide_fraud_detection_1202.transactions_dim: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "node_id": "model.nationwide_fraud_detection_1202.transactions_dim"} */
+create or replace transient table DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202.transactions_dim
+         as
+        (select transaction_id, sender_account_id, receiver_account_id, transaction_type, net_cash_flow_amount, transaction_time from  DATA_MESH_AI_AGENT_DEMO.bank_v1.transactions
+        );
+[0m19:02:46.059664 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+[0m19:02:47.360042 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m19:02:47.374224 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.individual_customers_dim (execute): 19:02:45.914420 => 19:02:47.373724
+[0m19:02:47.385213 [debug] [Thread-1  ]: On model.nationwide_fraud_detection_1202.individual_customers_dim: Close
+[0m19:02:47.619097 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7674292fd0>]}
+[0m19:02:47.630249 [info ] [Thread-1  ]: 5 of 7 OK created sql table model nationwide_fraud_detection_1202.individual_customers_dim  [[32mSUCCESS 1[0m in 1.82s]
+[0m19:02:47.642329 [debug] [Thread-1  ]: Finished running node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:02:47.694644 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m19:02:47.708212 [debug] [Thread-3  ]: Timing info for model.nationwide_fraud_detection_1202.transactions_dim (execute): 19:02:45.960547 => 19:02:47.707915
+[0m19:02:47.718948 [debug] [Thread-3  ]: On model.nationwide_fraud_detection_1202.transactions_dim: Close
+[0m19:02:47.957754 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76742abf70>]}
+[0m19:02:47.969897 [info ] [Thread-3  ]: 6 of 7 OK created sql table model nationwide_fraud_detection_1202.transactions_dim  [[32mSUCCESS 1[0m in 2.14s]
+[0m19:02:47.981778 [debug] [Thread-3  ]: Finished running node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:02:47.993065 [debug] [Thread-2  ]: Began running node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:02:48.002981 [info ] [Thread-2  ]: 7 of 7 START sql table model nationwide_fraud_detection_1202.fraud_detection_fact  [RUN]
+[0m19:02:48.015124 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly model.nationwide_fraud_detection_1202.customer_accounts_dim, now model.nationwide_fraud_detection_1202.fraud_detection_fact)
+[0m19:02:48.025228 [debug] [Thread-2  ]: Began compiling node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:02:48.042764 [debug] [Thread-2  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.fraud_detection_fact"
+[0m19:02:48.068758 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.fraud_detection_fact (compile): 19:02:48.035744 => 19:02:48.068420
+[0m19:02:48.078630 [debug] [Thread-2  ]: Began executing node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:02:48.094261 [debug] [Thread-2  ]: Writing runtime sql for node "model.nationwide_fraud_detection_1202.fraud_detection_fact"
+[0m19:02:48.118218 [debug] [Thread-2  ]: Using snowflake connection "model.nationwide_fraud_detection_1202.fraud_detection_fact"
+[0m19:02:48.128753 [debug] [Thread-2  ]: On model.nationwide_fraud_detection_1202.fraud_detection_fact: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "node_id": "model.nationwide_fraud_detection_1202.fraud_detection_fact"} */
+create or replace transient table DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202.fraud_detection_fact
+         as
+        (select t.transaction_id, t.sender_account_id, t.receiver_account_id, t.transaction_type, t.net_cash_flow_amount, t.transaction_time, a.account_id, a.customer_id, i.full_name, i.country_of_birth, i.birth_date, i.gender, i.social_security_number, i.state, i.city, i.address, i.zip from  DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202.transactions_dim t join  DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202.customer_accounts_dim a on t.sender_account_id = a.account_id join  DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202.individual_customers_dim i on a.customer_id = i.customer_id
+        );
+[0m19:02:48.139951 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m19:02:49.689857 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m19:02:49.694843 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.fraud_detection_fact (execute): 19:02:48.089898 => 19:02:49.694528
+[0m19:02:49.705948 [debug] [Thread-2  ]: On model.nationwide_fraud_detection_1202.fraud_detection_fact: Close
+[0m19:02:49.943740 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bedf7914-105c-4bc3-8237-52a9dd442f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76742b0760>]}
+[0m19:02:49.956147 [info ] [Thread-2  ]: 7 of 7 OK created sql table model nationwide_fraud_detection_1202.fraud_detection_fact  [[32mSUCCESS 1[0m in 1.93s]
+[0m19:02:49.968361 [debug] [Thread-2  ]: Finished running node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:02:49.981293 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:02:50.005555 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.individual_customers_dim' was properly closed.
+[0m19:02:50.017653 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.transactions_dim' was properly closed.
+[0m19:02:50.027607 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.customer_sender_transactions_dim' was properly closed.
+[0m19:02:50.037360 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.fraud_detection_fact' was properly closed.
+[0m19:02:50.047791 [info ] [MainThread]: 
+[0m19:02:50.058129 [info ] [MainThread]: Finished running 7 table models in 0 hours 0 minutes and 10.12 seconds (10.12s).
+[0m19:02:50.070894 [debug] [MainThread]: Command end result
+[0m19:02:50.192325 [info ] [MainThread]: 
+[0m19:02:50.206018 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:02:50.216125 [info ] [MainThread]: 
+[0m19:02:50.227274 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m19:02:50.237809 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 12.253473, "process_user_time": 5.884878, "process_kernel_time": 0.605024, "process_mem_max_rss": "254648", "process_in_blocks": "1840", "process_out_blocks": "4008"}
+[0m19:02:50.249262 [debug] [MainThread]: Command `dbt run` succeeded at 19:02:50.249030 after 12.26 seconds
+[0m19:02:50.260037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769aabe6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f767432bbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769b208400>]}
+[0m19:02:50.271650 [debug] [MainThread]: Flushing usage events
+[0m19:03:26.292699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4419325c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4416d8fa30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4416d8f820>]}
+
+
+============================== 19:03:26.302492 | 4cc98e8b-8c5a-4dc0-9f9f-e257048b7212 ==============================
+[0m19:03:26.302492 [info ] [MainThread]: Running with dbt=1.7.3
+[0m19:03:26.313692 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/logs', 'profiles_dir': '/opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/config', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt test -s ./models --profiles-dir /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/config --project-dir /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:03:27.541112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4cc98e8b-8c5a-4dc0-9f9f-e257048b7212', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4419a9d490>]}
+[0m19:03:27.688393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4cc98e8b-8c5a-4dc0-9f9f-e257048b7212', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43f9132310>]}
+[0m19:03:27.701301 [info ] [MainThread]: Registered adapter: snowflake=1.7.1
+[0m19:03:27.748373 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m19:03:27.996628 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:03:28.007677 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:03:28.027418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4cc98e8b-8c5a-4dc0-9f9f-e257048b7212', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43f8cb3e50>]}
+[0m19:03:28.151203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4cc98e8b-8c5a-4dc0-9f9f-e257048b7212', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43f8e28c40>]}
+[0m19:03:28.161957 [info ] [MainThread]: Found 7 models, 6 sources, 0 exposures, 0 metrics, 571 macros, 0 groups, 0 semantic models
+[0m19:03:28.173460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4cc98e8b-8c5a-4dc0-9f9f-e257048b7212', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43f8e11100>]}
+[0m19:03:28.185848 [info ] [MainThread]: 
+[0m19:03:28.196376 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:03:28.207873 [debug] [MainThread]: Command end result
+[0m19:03:28.313201 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 2.1038673, "process_user_time": 5.375287, "process_kernel_time": 0.716348, "process_mem_max_rss": "186460", "process_in_blocks": "1232", "process_out_blocks": "2616"}
+[0m19:03:28.323610 [debug] [MainThread]: Command `dbt test` succeeded at 19:03:28.323309 after 2.11 seconds
+[0m19:03:28.334789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4419325c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43f9093070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43f9132310>]}
+[0m19:03:28.344776 [debug] [MainThread]: Flushing usage events
+[0m19:04:05.173833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03318e0c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f032f348ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f032f348700>]}
+
+
+============================== 19:04:05.182654 | 0d72db20-3ba2-4a43-86dc-da4d4443b182 ==============================
+[0m19:04:05.182654 [info ] [MainThread]: Running with dbt=1.7.3
+[0m19:04:05.193650 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/config', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt docs generate --profiles-dir /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/config --project-dir /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt', 'send_anonymous_usage_stats': 'True'}
+[0m19:04:06.347075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0d72db20-3ba2-4a43-86dc-da4d4443b182', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f032f3892e0>]}
+[0m19:04:06.482093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0d72db20-3ba2-4a43-86dc-da4d4443b182', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0311724e50>]}
+[0m19:04:06.494887 [info ] [MainThread]: Registered adapter: snowflake=1.7.1
+[0m19:04:06.536083 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m19:04:06.756134 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:04:06.767377 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:04:06.786912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0d72db20-3ba2-4a43-86dc-da4d4443b182', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0311270f70>]}
+[0m19:04:06.833867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0d72db20-3ba2-4a43-86dc-da4d4443b182', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03113c4070>]}
+[0m19:04:06.844849 [info ] [MainThread]: Found 7 models, 6 sources, 0 exposures, 0 metrics, 571 macros, 0 groups, 0 semantic models
+[0m19:04:06.855779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0d72db20-3ba2-4a43-86dc-da4d4443b182', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03113c41f0>]}
+[0m19:04:06.869539 [info ] [MainThread]: 
+[0m19:04:06.881184 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:04:06.894262 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202'
+[0m19:04:06.927644 [debug] [ThreadPool]: Using snowflake connection "list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202"
+[0m19:04:06.938399 [debug] [ThreadPool]: On list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "connection_name": "list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202"} */
+show terse objects in DATA_MESH_AI_AGENT_DEMO.nationwide_fraud_detection_1202 limit 10000
+[0m19:04:06.948978 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:04:07.604659 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.0 seconds
+[0m19:04:07.617704 [debug] [ThreadPool]: On list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202: Close
+[0m19:04:07.801246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0d72db20-3ba2-4a43-86dc-da4d4443b182', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03116c44f0>]}
+[0m19:04:07.812958 [info ] [MainThread]: Concurrency: 4 threads (target='snowflake')
+[0m19:04:07.823781 [info ] [MainThread]: 
+[0m19:04:07.844135 [debug] [Thread-1  ]: Began running node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:04:07.844810 [debug] [Thread-2  ]: Began running node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:04:07.845477 [debug] [Thread-3  ]: Began running node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:04:07.846089 [debug] [Thread-4  ]: Began running node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:04:07.855572 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_DATA_MESH_AI_AGENT_DEMO_nationwide_fraud_detection_1202, now model.nationwide_fraud_detection_1202.account_unit_balance_dim)
+[0m19:04:07.867410 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.nationwide_fraud_detection_1202.customer_accounts_dim'
+[0m19:04:07.878311 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim'
+[0m19:04:07.890302 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.nationwide_fraud_detection_1202.customer_sender_transactions_dim'
+[0m19:04:07.901129 [debug] [Thread-1  ]: Began compiling node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:04:07.911215 [debug] [Thread-2  ]: Began compiling node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:04:07.922171 [debug] [Thread-3  ]: Began compiling node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:04:07.932649 [debug] [Thread-4  ]: Began compiling node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:04:07.954354 [debug] [Thread-1  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.account_unit_balance_dim"
+[0m19:04:07.962374 [debug] [Thread-2  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.customer_accounts_dim"
+[0m19:04:07.977878 [debug] [Thread-3  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim"
+[0m19:04:07.993225 [debug] [Thread-4  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.customer_sender_transactions_dim"
+[0m19:04:08.026296 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.account_unit_balance_dim (compile): 19:04:07.943010 => 19:04:08.025821
+[0m19:04:08.035345 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.customer_accounts_dim (compile): 19:04:07.957809 => 19:04:08.034891
+[0m19:04:08.045515 [debug] [Thread-3  ]: Timing info for model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim (compile): 19:04:07.973360 => 19:04:08.045041
+[0m19:04:08.046194 [debug] [Thread-1  ]: Began executing node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:04:08.054165 [debug] [Thread-4  ]: Timing info for model.nationwide_fraud_detection_1202.customer_sender_transactions_dim (compile): 19:04:07.988606 => 19:04:08.053787
+[0m19:04:08.056677 [debug] [Thread-2  ]: Began executing node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:04:08.066750 [debug] [Thread-3  ]: Began executing node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:04:08.077472 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.account_unit_balance_dim (execute): 19:04:08.076806 => 19:04:08.076853
+[0m19:04:08.089122 [debug] [Thread-4  ]: Began executing node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:04:08.099734 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.customer_accounts_dim (execute): 19:04:08.099313 => 19:04:08.099337
+[0m19:04:08.111824 [debug] [Thread-3  ]: Timing info for model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim (execute): 19:04:08.111408 => 19:04:08.111430
+[0m19:04:08.123133 [debug] [Thread-1  ]: Finished running node model.nationwide_fraud_detection_1202.account_unit_balance_dim
+[0m19:04:08.134408 [debug] [Thread-4  ]: Timing info for model.nationwide_fraud_detection_1202.customer_sender_transactions_dim (execute): 19:04:08.134019 => 19:04:08.134038
+[0m19:04:08.146816 [debug] [Thread-2  ]: Finished running node model.nationwide_fraud_detection_1202.customer_accounts_dim
+[0m19:04:08.158647 [debug] [Thread-3  ]: Finished running node model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim
+[0m19:04:08.169096 [debug] [Thread-1  ]: Began running node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:04:08.181281 [debug] [Thread-4  ]: Finished running node model.nationwide_fraud_detection_1202.customer_sender_transactions_dim
+[0m19:04:08.192178 [debug] [Thread-2  ]: Began running node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:04:08.214039 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.nationwide_fraud_detection_1202.account_unit_balance_dim, now model.nationwide_fraud_detection_1202.individual_customers_dim)
+[0m19:04:08.237676 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly model.nationwide_fraud_detection_1202.customer_accounts_dim, now model.nationwide_fraud_detection_1202.transactions_dim)
+[0m19:04:08.248515 [debug] [Thread-1  ]: Began compiling node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:04:08.259578 [debug] [Thread-2  ]: Began compiling node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:04:08.274168 [debug] [Thread-1  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.individual_customers_dim"
+[0m19:04:08.290530 [debug] [Thread-2  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.transactions_dim"
+[0m19:04:08.314695 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.individual_customers_dim (compile): 19:04:08.269259 => 19:04:08.314238
+[0m19:04:08.325345 [debug] [Thread-1  ]: Began executing node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:04:08.326075 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.transactions_dim (compile): 19:04:08.284443 => 19:04:08.325727
+[0m19:04:08.335401 [debug] [Thread-1  ]: Timing info for model.nationwide_fraud_detection_1202.individual_customers_dim (execute): 19:04:08.335013 => 19:04:08.335037
+[0m19:04:08.345905 [debug] [Thread-2  ]: Began executing node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:04:08.357155 [debug] [Thread-1  ]: Finished running node model.nationwide_fraud_detection_1202.individual_customers_dim
+[0m19:04:08.369694 [debug] [Thread-2  ]: Timing info for model.nationwide_fraud_detection_1202.transactions_dim (execute): 19:04:08.369327 => 19:04:08.369347
+[0m19:04:08.391598 [debug] [Thread-2  ]: Finished running node model.nationwide_fraud_detection_1202.transactions_dim
+[0m19:04:08.402925 [debug] [Thread-3  ]: Began running node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:04:08.413446 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.nationwide_fraud_detection_1202.customer_receiver_transactions_dim, now model.nationwide_fraud_detection_1202.fraud_detection_fact)
+[0m19:04:08.424234 [debug] [Thread-3  ]: Began compiling node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:04:08.440965 [debug] [Thread-3  ]: Writing injected SQL for node "model.nationwide_fraud_detection_1202.fraud_detection_fact"
+[0m19:04:08.468331 [debug] [Thread-3  ]: Timing info for model.nationwide_fraud_detection_1202.fraud_detection_fact (compile): 19:04:08.435596 => 19:04:08.467766
+[0m19:04:08.479570 [debug] [Thread-3  ]: Began executing node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:04:08.490781 [debug] [Thread-3  ]: Timing info for model.nationwide_fraud_detection_1202.fraud_detection_fact (execute): 19:04:08.490370 => 19:04:08.490394
+[0m19:04:08.501861 [debug] [Thread-3  ]: Finished running node model.nationwide_fraud_detection_1202.fraud_detection_fact
+[0m19:04:08.513775 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:04:08.524177 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.individual_customers_dim' was properly closed.
+[0m19:04:08.535013 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.transactions_dim' was properly closed.
+[0m19:04:08.545144 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.fraud_detection_fact' was properly closed.
+[0m19:04:08.554939 [debug] [MainThread]: Connection 'model.nationwide_fraud_detection_1202.customer_sender_transactions_dim' was properly closed.
+[0m19:04:08.566639 [debug] [MainThread]: Command end result
+[0m19:04:08.723135 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m19:04:08.733534 [info ] [MainThread]: Building catalog
+[0m19:04:08.746790 [debug] [ThreadPool]: Acquiring new snowflake connection 'DATA_MESH_AI_AGENT_DEMO.information_schema'
+[0m19:04:08.778770 [debug] [ThreadPool]: Using snowflake connection "DATA_MESH_AI_AGENT_DEMO.information_schema"
+[0m19:04:08.790008 [debug] [ThreadPool]: On DATA_MESH_AI_AGENT_DEMO.information_schema: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "snowflake", "connection_name": "DATA_MESH_AI_AGENT_DEMO.information_schema"} */
+with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        coalesce(table_type, 'DYNAMIC TABLE') as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from DATA_MESH_AI_AGENT_DEMO.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('transactions_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('customer_sender_transactions_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('fraud_detection_fact')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('customer_sender_transactions')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('account_unit_balance')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('account_unit_balance_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('customer_accounts_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('customer_receiver_transactions_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('individual_customers_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('individual_customers')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('transactions')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('customer_receiver_transactions')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('customer_accounts')
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from DATA_MESH_AI_AGENT_DEMO.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('transactions_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('customer_sender_transactions_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('fraud_detection_fact')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('customer_sender_transactions')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('account_unit_balance')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('account_unit_balance_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('customer_accounts_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('customer_receiver_transactions_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('nationwide_fraud_detection_1202')
+                    and upper("table_name") = upper('individual_customers_dim')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('individual_customers')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('transactions')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('customer_receiver_transactions')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('bank_v1')
+                    and upper("table_name") = upper('customer_accounts')
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+[0m19:04:08.801380 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:04:17.649661 [debug] [ThreadPool]: SQL status: SUCCESS 75 in 9.0 seconds
+[0m19:04:17.684744 [debug] [ThreadPool]: On DATA_MESH_AI_AGENT_DEMO.information_schema: Close
+[0m19:04:17.979037 [info ] [MainThread]: Catalog written to /opt/airflow/dbts/nationwide_fraud_detection_1202/draft/dbt/target/catalog.json
+[0m19:04:17.990999 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 12.894502, "process_user_time": 5.435081, "process_kernel_time": 0.627844, "process_mem_max_rss": "196704", "process_out_blocks": "6344", "process_in_blocks": "0"}
+[0m19:04:18.001667 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:04:18.001397 after 12.91 seconds
+[0m19:04:18.012905 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:04:18.022860 [debug] [MainThread]: Connection 'DATA_MESH_AI_AGENT_DEMO.information_schema' was properly closed.
+[0m19:04:18.032868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03318e0c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f032f3892e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f031162b5b0>]}
+[0m19:04:18.043340 [debug] [MainThread]: Flushing usage events

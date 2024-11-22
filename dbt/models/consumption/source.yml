@@ -1,0 +1,81 @@
+version: 2
+sources:
+  - name: bank_v1
+    schema: bank_v1
+    tables:
+      - name: transactions
+        columns:
+          - name: transaction_id
+            data_type: number
+          - name: sender_account_id
+            data_type: number
+          - name: receiver_account_id
+            data_type: number
+          - name: transaction_type
+            data_type: varchar
+          - name: net_cash_flow_amount
+            data_type: float
+          - name: transaction_time
+            data_type: timestamp_ntz
+
+      - name: customer_sender_transactions
+        columns:
+          - name: customer_id
+            data_type: varchar
+          - name: full_name
+            data_type: varchar
+          - name: transactions_count
+            data_type: number
+          - name: transactions_amount
+            data_type: float
+
+      - name: account_unit_balance
+        columns:
+          - name: account_unit_id
+            data_type: number
+          - name: net_amount
+            data_type: float
+          - name: population_time
+            data_type: timestamp_ntz
+
+      - name: customer_accounts
+        columns:
+          - name: customer_id
+            data_type: varchar
+          - name: account_id
+            data_type: number
+
+      - name: customer_receiver_transactions
+        columns:
+          - name: customer_id
+            data_type: varchar
+          - name: full_name
+            data_type: varchar
+          - name: transactions_count
+            data_type: number
+          - name: transactions_amount
+            data_type: float
+
+      - name: individual_customers
+        columns:
+          - name: customer_id
+            data_type: varchar
+          - name: full_name
+            data_type: varchar
+          - name: country_of_birth
+            data_type: varchar
+          - name: birth_date
+            data_type: date
+          - name: gender
+            data_type: varchar
+          - name: social_security_number
+            data_type: varchar
+          - name: state
+            data_type: varchar
+          - name: city
+            data_type: varchar
+          - name: address
+            data_type: varchar
+          - name: zip
+            data_type: varchar
+
